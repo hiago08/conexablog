@@ -14,8 +14,8 @@ $this->menu = array(
 <h1><?php echo 'Create' . ' ' . GxHtml::encode($model->label()); ?></h1>
 
 <?php
-var_dump($model);
 $this->renderPartial('_form', array(
 		'model' => $model,
+		'acao' => 'create',
 		'buttons' => 'create'));
 ?>

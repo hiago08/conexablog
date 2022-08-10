@@ -5,9 +5,11 @@ $this->breadcrumbs = array(
 	'Index',
 );
 
+ 
+
 $this->menu = array(
 	array('label'=>'Create' . ' ' . Usuario::label(), 'url' => array('create')),
-	array('label'=>'Manage' . ' ' . Usuario::label(2), 'url' => array('admin')),
+	// array('label'=>'Manage' . ' ' . Usuario::label(2), 'url' => array('admin')),
 );
 ?>
 

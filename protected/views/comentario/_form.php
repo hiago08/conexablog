@@ -1,10 +1,15 @@
 <div class="form">
 
+	<?php 
+		if(!isset($idComentario)){
+			$idComentario = null;
+		}
+	?>
 
 	<?php $form = $this->beginWidget('GxActiveForm', array(
 		'id' => 'comentario-form',
 		'enableAjaxValidation' => false,
-		'action' => array('comentario/create'),
+		'action' => array('comentario/'.$acao.$idComentario),
 	));
 	?>
 

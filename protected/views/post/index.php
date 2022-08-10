@@ -5,18 +5,18 @@ $this->breadcrumbs = array(
 	'Index',
 );
 
-$this->menu = array(
-	array('label'=>'Create' . ' ' . Post::label(), 'url' => array('create')),
-	array('label'=>'Manage' . ' ' . Post::label(2), 'url' => array('admin')),
-);
+if(!Yii::app()->user->isGuest){
+	$this->menu = array(
+		array('label'=>'Create' . ' ' . Post::label(), 'url' => array('create')),
+		// array('label'=>'Manage' . ' ' . Post::label(2), 'url' => array('admin')),
+	);
+}
 ?>
 
 <h1><?php echo GxHtml::encode(Post::label(2)); ?></h1>
 
 <?php 
 	$categorias = Categoria::model()->findAll();
-	// var_dump($dataProvider->findAll(array('id_categoria'=>2)));
-	// die;
 ?>
 
 <div class="dropdown">

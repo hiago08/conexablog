@@ -36,17 +36,17 @@ $this->breadcrumbs=array(
 		<?php echo $form->error($model,'senha'); ?>
 	</div>
 
-	<div class="row rememberMe">
-		<?php echo $form->checkBox($model,'rememberMe'); ?>
-		<?php echo $form->label($model,'rememberMe'); ?>
-		<?php echo $form->error($model,'rememberMe'); ?>
-	</div>
+	<!-- <div class="row rememberMe">
+		<?php //echo $form->checkBox($model,'rememberMe'); ?>
+		<?php //echo $form->label($model,'rememberMe'); ?>
+		<?php //echo $form->error($model,'rememberMe'); ?>
+	</div> -->
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Login', array('class'=>'btn btn-primary botao')); ?>
 	</div>
 
-	<p>Caso não possua cadastro ativo <a href="<?php echo Yii::app()->request->scriptUrl ?>?r=usuario/create">cadastre-se aqui!</a></p>
+	<p>Caso não possua cadastro ativo <a class="linkConexa" href="<?php echo Yii::app()->request->scriptUrl ?>?r=usuario/create">cadastre-se aqui!</a></p>
 
 <?php $this->endWidget(); ?>
 </div><!-- form -->

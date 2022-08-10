@@ -3556,3 +3556,698 @@ Stack trace:
 REQUEST_URI=/index.php?r=usuario/admin
 HTTP_REFERER=http://localhost:3000/index.php?r=site/login
 ---
+2022/08/09 21:18:46 [error] [exception.CException] CException: Property "Usuario.id" is not defined. in C:\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 C:\blog-conexa\protected\views\comentario\view.php(31): CActiveRecord->__get('id')
+#2 C:\Yii\framework\web\CBaseController.php(126): require('C:\\blog-conexa\\...')
+#3 C:\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\blog-conexa\\...', Array, true)
+#4 C:\Yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\blog-conexa\\...', Array, true)
+#5 C:\Yii\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#6 C:\blog-conexa\protected\controllers\ComentarioController.php(8): CController->render('view', Array)
+#7 [internal function]: ComentarioController->actionView('1')
+#8 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ComentarioController), Array)
+#9 C:\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ComentarioController), Object(ReflectionMethod), Array)
+#10 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Yii\framework\web\CWebApplication.php(282): CController->run('view')
+#14 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentario/view')
+#15 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\blog-conexa\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=comentario/view&id=1
+HTTP_REFERER=http://localhost:3000/index.php?r=comentario/index
+---
+2022/08/09 21:22:30 [error] [php] Undefined variable: idPost (C:\blog-conexa\protected\views\comentario\_form.php:19)
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(872): ComentarioController->renderFile()
+#1 C:\blog-conexa\protected\views\comentario\update.php(21): ComentarioController->renderPartial()
+#2 C:\Yii\framework\web\CBaseController.php(126): require()
+#3 C:\Yii\framework\web\CBaseController.php(95): ComentarioController->renderInternal()
+#4 C:\Yii\framework\web\CController.php(872): ComentarioController->renderFile()
+#5 C:\Yii\framework\web\CController.php(785): ComentarioController->renderPartial()
+#6 C:\blog-conexa\protected\controllers\ComentarioController.php(45): ComentarioController->render()
+#7 unknown(0): ComentarioController->actionUpdate()
+#8 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Yii\framework\web\CController.php(286): ComentarioController->runAction()
+#12 C:\Yii\framework\web\CController.php(265): ComentarioController->runActionWithFilters()
+#13 C:\Yii\framework\web\CWebApplication.php(282): ComentarioController->run()
+#14 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\blog-conexa\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=comentario/update&id=1
+in C:\blog-conexa\protected\views\comentario\_form.php (19)
+in C:\blog-conexa\protected\views\comentario\update.php (21)
+in C:\blog-conexa\protected\controllers\ComentarioController.php (45)
+2022/08/09 21:24:30 [error] [php] Undefined variable: idPost (C:\blog-conexa\protected\views\comentario\_form.php:19)
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(872): ComentarioController->renderFile()
+#1 C:\blog-conexa\protected\views\comentario\update.php(21): ComentarioController->renderPartial()
+#2 C:\Yii\framework\web\CBaseController.php(126): require()
+#3 C:\Yii\framework\web\CBaseController.php(95): ComentarioController->renderInternal()
+#4 C:\Yii\framework\web\CController.php(872): ComentarioController->renderFile()
+#5 C:\Yii\framework\web\CController.php(785): ComentarioController->renderPartial()
+#6 C:\blog-conexa\protected\controllers\ComentarioController.php(45): ComentarioController->render()
+#7 unknown(0): ComentarioController->actionUpdate()
+#8 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Yii\framework\web\CController.php(286): ComentarioController->runAction()
+#12 C:\Yii\framework\web\CController.php(265): ComentarioController->runActionWithFilters()
+#13 C:\Yii\framework\web\CWebApplication.php(282): ComentarioController->run()
+#14 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\blog-conexa\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=comentario/update&id=1
+in C:\blog-conexa\protected\views\comentario\_form.php (19)
+in C:\blog-conexa\protected\views\comentario\update.php (21)
+in C:\blog-conexa\protected\controllers\ComentarioController.php (45)
+2022/08/09 21:35:25 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\Yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Yii\framework\web\CWebApplication.php(282): CController->run('update')
+#4 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentario/upda...')
+#5 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\blog-conexa\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php?r=comentario/update&idPost=1
+HTTP_REFERER=http://localhost:3000/index.php?r=comentario/view&id=1
+---
+2022/08/09 21:35:25 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\Yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Yii\framework\web\CWebApplication.php(282): CController->run('update')
+#4 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentario/upda...')
+#5 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\blog-conexa\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php?r=comentario/update&idPost=1
+HTTP_REFERER=http://localhost:3000/index.php?r=comentario/view&id=1
+---
+2022/08/09 21:35:48 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\Yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Yii\framework\web\CWebApplication.php(282): CController->run('update')
+#4 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentario/upda...')
+#5 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\blog-conexa\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php?r=comentario/update&idPost=1
+HTTP_REFERER=http://localhost:3000/index.php?r=comentario/view&id=1
+---
+2022/08/09 21:35:59 [error] [php] Undefined variable: idPost (C:\blog-conexa\protected\views\comentario\_form.php:19)
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(872): ComentarioController->renderFile()
+#1 C:\blog-conexa\protected\views\comentario\update.php(21): ComentarioController->renderPartial()
+#2 C:\Yii\framework\web\CBaseController.php(126): require()
+#3 C:\Yii\framework\web\CBaseController.php(95): ComentarioController->renderInternal()
+#4 C:\Yii\framework\web\CController.php(872): ComentarioController->renderFile()
+#5 C:\Yii\framework\web\CController.php(785): ComentarioController->renderPartial()
+#6 C:\blog-conexa\protected\controllers\ComentarioController.php(45): ComentarioController->render()
+#7 unknown(0): ComentarioController->actionUpdate()
+#8 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Yii\framework\web\CController.php(286): ComentarioController->runAction()
+#12 C:\Yii\framework\web\CController.php(265): ComentarioController->runActionWithFilters()
+#13 C:\Yii\framework\web\CWebApplication.php(282): ComentarioController->run()
+#14 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\blog-conexa\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=comentario/update&id=1
+in C:\blog-conexa\protected\views\comentario\_form.php (19)
+in C:\blog-conexa\protected\views\comentario\update.php (21)
+in C:\blog-conexa\protected\controllers\ComentarioController.php (45)
+2022/08/09 21:36:09 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\Yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Yii\framework\web\CWebApplication.php(282): CController->run('update')
+#4 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentario/upda...')
+#5 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\blog-conexa\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php?r=comentario/update&idPost=1
+---
+2022/08/09 21:36:25 [error] [php] Undefined variable: idPost (C:\blog-conexa\protected\views\comentario\_form.php:19)
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(872): ComentarioController->renderFile()
+#1 C:\blog-conexa\protected\views\comentario\update.php(21): ComentarioController->renderPartial()
+#2 C:\Yii\framework\web\CBaseController.php(126): require()
+#3 C:\Yii\framework\web\CBaseController.php(95): ComentarioController->renderInternal()
+#4 C:\Yii\framework\web\CController.php(872): ComentarioController->renderFile()
+#5 C:\Yii\framework\web\CController.php(785): ComentarioController->renderPartial()
+#6 C:\blog-conexa\protected\controllers\ComentarioController.php(45): ComentarioController->render()
+#7 unknown(0): ComentarioController->actionUpdate()
+#8 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Yii\framework\web\CController.php(286): ComentarioController->runAction()
+#12 C:\Yii\framework\web\CController.php(265): ComentarioController->runActionWithFilters()
+#13 C:\Yii\framework\web\CWebApplication.php(282): ComentarioController->run()
+#14 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\blog-conexa\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=comentario/update&id=1
+in C:\blog-conexa\protected\views\comentario\_form.php (19)
+in C:\blog-conexa\protected\views\comentario\update.php (21)
+in C:\blog-conexa\protected\controllers\ComentarioController.php (45)
+2022/08/09 21:42:40 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\blog-conexa\protected\controllers\ComentarioController.php:56
+Stack trace:
+#0 [internal function]: ComentarioController->actionDelete('1')
+#1 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ComentarioController), Array)
+#2 C:\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ComentarioController), Object(ReflectionMethod), Array)
+#3 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#7 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentario/dele...')
+#8 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\blog-conexa\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=comentario/delete&id=1
+HTTP_REFERER=http://localhost:3000/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+---
+2022/08/09 21:43:06 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\blog-conexa\protected\controllers\ComentarioController.php:56
+Stack trace:
+#0 [internal function]: ComentarioController->actionDelete('1')
+#1 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ComentarioController), Array)
+#2 C:\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ComentarioController), Object(ReflectionMethod), Array)
+#3 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#7 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentario/dele...')
+#8 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\blog-conexa\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=comentario/delete&id=1
+HTTP_REFERER=http://localhost:3000/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+---
+2022/08/09 21:43:21 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\blog-conexa\protected\controllers\ComentarioController.php:56
+Stack trace:
+#0 [internal function]: ComentarioController->actionDelete('1')
+#1 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ComentarioController), Array)
+#2 C:\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ComentarioController), Object(ReflectionMethod), Array)
+#3 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#7 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentario/dele...')
+#8 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\blog-conexa\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=comentario/delete&id=1
+HTTP_REFERER=http://localhost:3000/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+---
+2022/08/09 21:45:37 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\blog-conexa\protected\controllers\ComentarioController.php:56
+Stack trace:
+#0 [internal function]: ComentarioController->actionDelete('1')
+#1 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ComentarioController), Array)
+#2 C:\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ComentarioController), Object(ReflectionMethod), Array)
+#3 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#7 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentario/dele...')
+#8 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\blog-conexa\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=comentario/delete&id=1
+HTTP_REFERER=http://localhost:3000/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+---
+2022/08/09 21:45:42 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\blog-conexa\protected\controllers\ComentarioController.php:56
+Stack trace:
+#0 [internal function]: ComentarioController->actionDelete('1')
+#1 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ComentarioController), Array)
+#2 C:\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ComentarioController), Object(ReflectionMethod), Array)
+#3 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#7 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentario/dele...')
+#8 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\blog-conexa\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=comentario/delete&id=1
+HTTP_REFERER=http://localhost:3000/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+---
+2022/08/09 21:45:54 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\blog-conexa\protected\controllers\ComentarioController.php:56
+Stack trace:
+#0 [internal function]: ComentarioController->actionDelete('1')
+#1 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ComentarioController), Array)
+#2 C:\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ComentarioController), Object(ReflectionMethod), Array)
+#3 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#7 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentario/dele...')
+#8 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\blog-conexa\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=comentario/delete&id=1
+HTTP_REFERER=http://localhost:3000/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+---
+2022/08/10 06:27:03 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\Yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Yii\framework\web\CWebApplication.php(282): CController->run('update')
+#4 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentario/upda...')
+#5 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\blog-conexa\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php?r=comentario/update&idPost=1
+HTTP_REFERER=http://localhost:3000/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+---
+2022/08/10 06:41:55 [error] [php] Undefined variable: id_comentario (C:\blog-conexa\protected\views\post\view.php:70)
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(872): PostController->renderFile()
+#1 C:\Yii\framework\web\CController.php(785): PostController->renderPartial()
+#2 C:\blog-conexa\protected\controllers\PostController.php(8): PostController->render()
+#3 unknown(0): PostController->actionView()
+#4 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\Yii\framework\web\CController.php(286): PostController->runAction()
+#8 C:\Yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#9 C:\Yii\framework\web\CWebApplication.php(282): PostController->run()
+#10 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\blog-conexa\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+in C:\blog-conexa\protected\views\post\view.php (70)
+in C:\blog-conexa\protected\controllers\PostController.php (8)
+in C:\blog-conexa\index.php (13)
+2022/08/10 06:42:22 [error] [php] Undefined variable: id_comentario (C:\blog-conexa\protected\views\post\view.php:70)
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(872): PostController->renderFile()
+#1 C:\Yii\framework\web\CController.php(785): PostController->renderPartial()
+#2 C:\blog-conexa\protected\controllers\PostController.php(8): PostController->render()
+#3 unknown(0): PostController->actionView()
+#4 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\Yii\framework\web\CController.php(286): PostController->runAction()
+#8 C:\Yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#9 C:\Yii\framework\web\CWebApplication.php(282): PostController->run()
+#10 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\blog-conexa\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+in C:\blog-conexa\protected\views\post\view.php (70)
+in C:\blog-conexa\protected\controllers\PostController.php (8)
+in C:\blog-conexa\index.php (13)
+2022/08/10 06:44:16 [error] [php] Undefined variable: id_comentario (C:\blog-conexa\protected\views\post\view.php:70)
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(872): PostController->renderFile()
+#1 C:\Yii\framework\web\CController.php(785): PostController->renderPartial()
+#2 C:\blog-conexa\protected\controllers\PostController.php(8): PostController->render()
+#3 unknown(0): PostController->actionView()
+#4 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\Yii\framework\web\CController.php(286): PostController->runAction()
+#8 C:\Yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#9 C:\Yii\framework\web\CWebApplication.php(282): PostController->run()
+#10 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\blog-conexa\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+in C:\blog-conexa\protected\views\post\view.php (70)
+in C:\blog-conexa\protected\controllers\PostController.php (8)
+in C:\blog-conexa\index.php (13)
+2022/08/10 06:45:27 [error] [php] Undefined variable: id_comentario (C:\blog-conexa\protected\views\post\view.php:70)
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(872): PostController->renderFile()
+#1 C:\Yii\framework\web\CController.php(785): PostController->renderPartial()
+#2 C:\blog-conexa\protected\controllers\PostController.php(8): PostController->render()
+#3 unknown(0): PostController->actionView()
+#4 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\Yii\framework\web\CController.php(286): PostController->runAction()
+#8 C:\Yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#9 C:\Yii\framework\web\CWebApplication.php(282): PostController->run()
+#10 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\blog-conexa\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+in C:\blog-conexa\protected\views\post\view.php (70)
+in C:\blog-conexa\protected\controllers\PostController.php (8)
+in C:\blog-conexa\index.php (13)
+2022/08/10 07:39:19 [error] [php] Undefined variable: id_comentario (C:\blog-conexa\protected\views\post\view.php:70)
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(872): PostController->renderFile()
+#1 C:\Yii\framework\web\CController.php(785): PostController->renderPartial()
+#2 C:\blog-conexa\protected\controllers\PostController.php(8): PostController->render()
+#3 unknown(0): PostController->actionView()
+#4 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\Yii\framework\web\CController.php(286): PostController->runAction()
+#8 C:\Yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#9 C:\Yii\framework\web\CWebApplication.php(282): PostController->run()
+#10 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\blog-conexa\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+in C:\blog-conexa\protected\views\post\view.php (70)
+in C:\blog-conexa\protected\controllers\PostController.php (8)
+in C:\blog-conexa\index.php (13)
+2022/08/10 07:43:03 [error] [php] Undefined variable: id_comentario (C:\blog-conexa\protected\views\post\view.php:72)
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(872): PostController->renderFile()
+#1 C:\Yii\framework\web\CController.php(785): PostController->renderPartial()
+#2 C:\blog-conexa\protected\controllers\PostController.php(8): PostController->render()
+#3 unknown(0): PostController->actionView()
+#4 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\Yii\framework\web\CController.php(286): PostController->runAction()
+#8 C:\Yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#9 C:\Yii\framework\web\CWebApplication.php(282): PostController->run()
+#10 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\blog-conexa\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+in C:\blog-conexa\protected\views\post\view.php (72)
+in C:\blog-conexa\protected\controllers\PostController.php (8)
+in C:\blog-conexa\index.php (13)
+2022/08/10 07:50:23 [error] [php] Undefined variable: idPost (C:\blog-conexa\protected\views\comentario\_form.php:19)
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(872): ComentarioController->renderFile()
+#1 C:\blog-conexa\protected\views\comentario\update.php(21): ComentarioController->renderPartial()
+#2 C:\Yii\framework\web\CBaseController.php(126): require()
+#3 C:\Yii\framework\web\CBaseController.php(95): ComentarioController->renderInternal()
+#4 C:\Yii\framework\web\CController.php(872): ComentarioController->renderFile()
+#5 C:\Yii\framework\web\CController.php(785): ComentarioController->renderPartial()
+#6 C:\blog-conexa\protected\controllers\ComentarioController.php(47): ComentarioController->render()
+#7 unknown(0): ComentarioController->actionUpdate()
+#8 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Yii\framework\web\CController.php(286): ComentarioController->runAction()
+#12 C:\Yii\framework\web\CController.php(265): ComentarioController->runActionWithFilters()
+#13 C:\Yii\framework\web\CWebApplication.php(282): ComentarioController->run()
+#14 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\blog-conexa\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=comentario/update&id=6
+in C:\blog-conexa\protected\views\comentario\_form.php (19)
+in C:\blog-conexa\protected\views\comentario\update.php (21)
+in C:\blog-conexa\protected\controllers\ComentarioController.php (47)
+2022/08/10 08:02:51 [error] [exception.CException] CException: CWebApplication and its behaviors do not have a method or closure named "loadModel". in C:\Yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\blog-conexa\protected\views\post\view.php(73): CComponent->__call('loadModel', Array)
+#1 C:\Yii\framework\web\CBaseController.php(126): require('C:\\blog-conexa\\...')
+#2 C:\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\blog-conexa\\...', Array, true)
+#3 C:\Yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\blog-conexa\\...', Array, true)
+#4 C:\Yii\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#5 C:\blog-conexa\protected\controllers\PostController.php(8): CController->render('view', Array)
+#6 [internal function]: PostController->actionView('1')
+#7 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#8 C:\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#9 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#14 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\blog-conexa\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+HTTP_REFERER=http://localhost:3000/index.php?r=post/index
+---
+2022/08/10 08:06:22 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\blog-conexa\protected\controllers\ComentarioController.php:58
+Stack trace:
+#0 [internal function]: ComentarioController->actionDelete('1')
+#1 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ComentarioController), Array)
+#2 C:\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ComentarioController), Object(ReflectionMethod), Array)
+#3 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#7 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentario/dele...')
+#8 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\blog-conexa\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=comentario/delete&id=1
+HTTP_REFERER=http://localhost:3000/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+---
+2022/08/10 08:55:15 [error] [php] Undefined variable: idPost (C:\blog-conexa\protected\views\comentario\_form.php:19)
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(872): ComentarioController->renderFile()
+#1 C:\blog-conexa\protected\views\comentario\create.php(19): ComentarioController->renderPartial()
+#2 C:\Yii\framework\web\CBaseController.php(126): require()
+#3 C:\Yii\framework\web\CBaseController.php(95): ComentarioController->renderInternal()
+#4 C:\Yii\framework\web\CController.php(872): ComentarioController->renderFile()
+#5 C:\Yii\framework\web\CController.php(785): ComentarioController->renderPartial()
+#6 C:\blog-conexa\protected\controllers\ComentarioController.php(29): ComentarioController->render()
+#7 C:\Yii\framework\web\actions\CInlineAction.php(49): ComentarioController->actionCreate()
+#8 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\Yii\framework\web\CController.php(286): ComentarioController->runAction()
+#10 C:\Yii\framework\web\CController.php(265): ComentarioController->runActionWithFilters()
+#11 C:\Yii\framework\web\CWebApplication.php(282): ComentarioController->run()
+#12 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\blog-conexa\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=comentario/create
+in C:\blog-conexa\protected\views\comentario\_form.php (19)
+in C:\blog-conexa\protected\views\comentario\create.php (19)
+in C:\blog-conexa\protected\controllers\ComentarioController.php (29)
+2022/08/10 08:55:24 [error] [php] Undefined variable: idPost (C:\blog-conexa\protected\views\comentario\_form.php:19)
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(872): ComentarioController->renderFile()
+#1 C:\blog-conexa\protected\views\comentario\create.php(19): ComentarioController->renderPartial()
+#2 C:\Yii\framework\web\CBaseController.php(126): require()
+#3 C:\Yii\framework\web\CBaseController.php(95): ComentarioController->renderInternal()
+#4 C:\Yii\framework\web\CController.php(872): ComentarioController->renderFile()
+#5 C:\Yii\framework\web\CController.php(785): ComentarioController->renderPartial()
+#6 C:\blog-conexa\protected\controllers\ComentarioController.php(29): ComentarioController->render()
+#7 C:\Yii\framework\web\actions\CInlineAction.php(49): ComentarioController->actionCreate()
+#8 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\Yii\framework\web\CController.php(286): ComentarioController->runAction()
+#10 C:\Yii\framework\web\CController.php(265): ComentarioController->runActionWithFilters()
+#11 C:\Yii\framework\web\CWebApplication.php(282): ComentarioController->run()
+#12 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\blog-conexa\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=comentario/create
+in C:\blog-conexa\protected\views\comentario\_form.php (19)
+in C:\blog-conexa\protected\views\comentario\create.php (19)
+in C:\blog-conexa\protected\controllers\ComentarioController.php (29)
+2022/08/10 09:55:21 [error] [php] Undefined variable: acao (C:\blog-conexa\protected\views\comentario\_form.php:7)
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(872): PostController->renderFile()
+#1 C:\blog-conexa\protected\views\post\view.php(37): PostController->renderPartial()
+#2 C:\Yii\framework\web\CBaseController.php(126): require()
+#3 C:\Yii\framework\web\CBaseController.php(95): PostController->renderInternal()
+#4 C:\Yii\framework\web\CController.php(872): PostController->renderFile()
+#5 C:\Yii\framework\web\CController.php(785): PostController->renderPartial()
+#6 C:\blog-conexa\protected\controllers\PostController.php(8): PostController->render()
+#7 unknown(0): PostController->actionView()
+#8 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Yii\framework\web\CController.php(286): PostController->runAction()
+#12 C:\Yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#13 C:\Yii\framework\web\CWebApplication.php(282): PostController->run()
+#14 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\blog-conexa\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+in C:\blog-conexa\protected\views\comentario\_form.php (7)
+in C:\blog-conexa\protected\views\post\view.php (37)
+in C:\blog-conexa\protected\controllers\PostController.php (8)
+2022/08/10 10:07:06 [error] [php] Undefined variable: acao (C:\blog-conexa\protected\views\comentario\_form.php:7)
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(872): PostController->renderFile()
+#1 C:\blog-conexa\protected\views\post\view.php(37): PostController->renderPartial()
+#2 C:\Yii\framework\web\CBaseController.php(126): require()
+#3 C:\Yii\framework\web\CBaseController.php(95): PostController->renderInternal()
+#4 C:\Yii\framework\web\CController.php(872): PostController->renderFile()
+#5 C:\Yii\framework\web\CController.php(785): PostController->renderPartial()
+#6 C:\blog-conexa\protected\controllers\PostController.php(8): PostController->render()
+#7 unknown(0): PostController->actionView()
+#8 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Yii\framework\web\CController.php(286): PostController->runAction()
+#12 C:\Yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#13 C:\Yii\framework\web\CWebApplication.php(282): PostController->run()
+#14 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\blog-conexa\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+in C:\blog-conexa\protected\views\comentario\_form.php (7)
+in C:\blog-conexa\protected\views\post\view.php (37)
+in C:\blog-conexa\protected\controllers\PostController.php (8)
+2022/08/10 10:11:19 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\Yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Yii\framework\web\CWebApplication.php(282): CController->run('update')
+#4 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentario/upda...')
+#5 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\blog-conexa\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php?r=comentario/update
+HTTP_REFERER=http://localhost:3000/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+---
+2022/08/10 10:19:02 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\Yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Yii\framework\web\CWebApplication.php(282): CController->run('update')
+#4 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentario/upda...')
+#5 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\blog-conexa\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php?r=comentario/update
+HTTP_REFERER=http://localhost:3000/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+---
+2022/08/10 10:22:24 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\Yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Yii\framework\web\CWebApplication.php(282): CController->run('update')
+#4 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentario/upda...')
+#5 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\blog-conexa\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php?r=comentario/update
+HTTP_REFERER=http://localhost:3000/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+---
+2022/08/10 10:27:30 [error] [php] Undefined variable: idComentario (C:\blog-conexa\protected\views\comentario\_formUpdate.php:7)
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(872): PostController->renderFile()
+#1 C:\blog-conexa\protected\views\post\view.php(78): PostController->renderPartial()
+#2 C:\Yii\framework\web\CBaseController.php(126): require()
+#3 C:\Yii\framework\web\CBaseController.php(95): PostController->renderInternal()
+#4 C:\Yii\framework\web\CController.php(872): PostController->renderFile()
+#5 C:\Yii\framework\web\CController.php(785): PostController->renderPartial()
+#6 C:\blog-conexa\protected\controllers\PostController.php(8): PostController->render()
+#7 unknown(0): PostController->actionView()
+#8 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Yii\framework\web\CController.php(286): PostController->runAction()
+#12 C:\Yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#13 C:\Yii\framework\web\CWebApplication.php(282): PostController->run()
+#14 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\blog-conexa\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+in C:\blog-conexa\protected\views\comentario\_formUpdate.php (7)
+in C:\blog-conexa\protected\views\post\view.php (78)
+in C:\blog-conexa\protected\controllers\PostController.php (8)
+2022/08/10 10:27:44 [error] [php] Undefined variable: idComentario (C:\blog-conexa\protected\views\comentario\_formUpdate.php:7)
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(872): PostController->renderFile()
+#1 C:\blog-conexa\protected\views\post\view.php(78): PostController->renderPartial()
+#2 C:\Yii\framework\web\CBaseController.php(126): require()
+#3 C:\Yii\framework\web\CBaseController.php(95): PostController->renderInternal()
+#4 C:\Yii\framework\web\CController.php(872): PostController->renderFile()
+#5 C:\Yii\framework\web\CController.php(785): PostController->renderPartial()
+#6 C:\blog-conexa\protected\controllers\PostController.php(8): PostController->render()
+#7 unknown(0): PostController->actionView()
+#8 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\Yii\framework\web\CController.php(286): PostController->runAction()
+#12 C:\Yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#13 C:\Yii\framework\web\CWebApplication.php(282): PostController->run()
+#14 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\blog-conexa\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+in C:\blog-conexa\protected\views\comentario\_formUpdate.php (7)
+in C:\blog-conexa\protected\views\post\view.php (78)
+in C:\blog-conexa\protected\controllers\PostController.php (8)
+2022/08/10 10:28:01 [error] [exception.ParseError] ParseError: syntax error, unexpected '=', expecting ')' in C:\blog-conexa\protected\views\post\view.php:78
+Stack trace:
+#0 C:\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\blog-conexa\\...', Array, true)
+#1 C:\Yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\blog-conexa\\...', Array, true)
+#2 C:\Yii\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#3 C:\blog-conexa\protected\controllers\PostController.php(8): CController->render('view', Array)
+#4 [internal function]: PostController->actionView('1')
+#5 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\Yii\framework\web\CWebApplication.php(282): CController->run('view')
+#11 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#12 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\blog-conexa\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+HTTP_REFERER=http://localhost:3000/index.php?r=post/index
+---
+2022/08/10 10:28:02 [error] [exception.ParseError] ParseError: syntax error, unexpected '=', expecting ')' in C:\blog-conexa\protected\views\post\view.php:78
+Stack trace:
+#0 C:\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\blog-conexa\\...', Array, true)
+#1 C:\Yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\blog-conexa\\...', Array, true)
+#2 C:\Yii\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#3 C:\blog-conexa\protected\controllers\PostController.php(8): CController->render('view', Array)
+#4 [internal function]: PostController->actionView('1')
+#5 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#6 C:\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#7 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\Yii\framework\web\CWebApplication.php(282): CController->run('view')
+#11 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#12 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\blog-conexa\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+HTTP_REFERER=http://localhost:3000/index.php?r=post/index
+---
+2022/08/10 10:53:35 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "update9". in C:\Yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\Yii\framework\web\CController.php(270): CController->missingAction('update9')
+#1 C:\Yii\framework\web\CWebApplication.php(282): CController->run('update9')
+#2 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('comentario/upda...')
+#3 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\blog-conexa\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=comentario/update9
+HTTP_REFERER=http://localhost:3000/index.php?r=post/view&id=2&title=Meu+Primeiro+Post
+---
+2022/08/10 11:24:06 [error] [exception.Error] Error: Access to undeclared static property: Yii::$app in C:\blog-conexa\protected\views\post\view.php:93
+Stack trace:
+#0 C:\Yii\framework\web\CBaseController.php(126): require()
+#1 C:\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\blog-conexa\\...', Array, true)
+#2 C:\Yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\blog-conexa\\...', Array, true)
+#3 C:\Yii\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#4 C:\blog-conexa\protected\controllers\PostController.php(8): CController->render('view', Array)
+#5 [internal function]: PostController->actionView('1')
+#6 C:\Yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#7 C:\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#8 C:\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\Yii\framework\web\CWebApplication.php(282): CController->run('view')
+#12 C:\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#13 C:\Yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\blog-conexa\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=post/view&id=1&title=Meu+Primeiro+Post
+HTTP_REFERER=http://localhost:3000/index.php?r=post/index
+---

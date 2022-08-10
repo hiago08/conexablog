@@ -10,7 +10,7 @@ if (!Yii::app()->user->isGuest){
 		array('label'=>'Exibir' . ' ' . $model->label(2), 'url'=>array('index')),
 		array('label'=>'Criar um novo' . ' ' . $model->label(), 'url'=>array('create')),
 		array('label'=>'Atualizar' . ' ' . $model->label(), 'url'=>array('update', 'id' => $model->id_post), 'visible'=>Yii::app()->user->id == $model->id_usuario),
-		array('label'=>'Deletar' . ' ' . $model->label(), 'url'=>'#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id_post), 'confirm'=>'Are you sure you want to delete this item?'), 'visible'=>Yii::app()->user->id == $model->id_usuario),
+		// array('label'=>'Deletar' . ' ' . $model->label(), 'url'=>'#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id_post), 'confirm'=>'Are you sure you want to delete this item?'), 'visible'=>Yii::app()->user->id == $model->id_usuario),
 		// array('label'=>'Manage' . ' ' . $model->label(2), 'url'=>array('admin')),
 	);
 }
@@ -35,6 +35,7 @@ if (!Yii::app()->user->isGuest){
 				$this->renderPartial('//comentario/_form', array(
 					'model' => $comentario,
 					'idPost' => $model->id_post,
+					'acao' => 'create',
 				));
 			}else{
 				echo 'Para escrever um comentário, você deve estar logado';
@@ -53,6 +54,27 @@ if (!Yii::app()->user->isGuest){
 								<h5 class="card-title"><?php echo $comentario->usuario->nome?></h5>
 								<p class="card-text"><?php echo $comentario->texto?></p>
 								<p class="card-text"><small class="text-muted"><?php echo $comentario->data?></small></p>
+								<?php if(Yii::app()->user->id == $model->usuario->id_usuario): ?>
+									<!-- Alterado a partir daqui -->
+									<p>
+										<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+											Alterar Comentario
+										</a>
+									</p>
+									<div class="collapse" id="collapseExample">
+										<?php
+											$pk = $comentario->id_comentario;
+											$dadosComentario = Comentario::model()->findByPk($pk);
+											$this->renderPartial('//comentario/_form', array(
+												'model' => $dadosComentario,
+												'idPost' => $model->id_post,
+												'idComentario' => '&id='.$pk,
+												'acao' => 'update',
+											));
+										?>
+									</div>
+									<!-- Até aqui -->
+								<?php endif; ?>
 							</div>
 						</div>
 					</div>
@@ -61,10 +83,6 @@ if (!Yii::app()->user->isGuest){
 		<?php else: ?>
 			<h6>Não há comentarios nessa publicação</h6>
 		<?php endif ?>
-	
-			<!-- // $dadosProvider =  $this->loadModel($model);
-			// var_dump($dadosProvider);
-			// $this->render('//comentario/view'); -->
 	
 		
 	</div>

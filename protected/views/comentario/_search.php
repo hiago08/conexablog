@@ -12,12 +12,12 @@
 
 	<div class="row">
 		<?php echo $form->label($model, 'id_post'); ?>
-		<?php echo $form->dropDownList($model, 'id_post', GxHtml::listDataEx(::model()->findAllAttributes(null, true)), array('prompt' => 'All')); ?>
+		<?php echo $form->dropDownList($model, 'id_post', GxHtml::listDataEx(Comentario::model()->findAllAttributes(null, true)), array('prompt' => 'All')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model, 'id_usuario'); ?>
-		<?php echo $form->dropDownList($model, 'id_usuario', GxHtml::listDataEx(::model()->findAllAttributes(null, true)), array('prompt' => 'All')); ?>
+		<?php echo $form->dropDownList($model, 'id_usuario', GxHtml::listDataEx(Comentario::model()->findAllAttributes(null, true)), array('prompt' => 'All')); ?>
 	</div>
 
 	<div class="row">

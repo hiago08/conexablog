@@ -35,7 +35,9 @@ class ComentarioController extends GxController {
 
 		if (isset($_POST['Comentario'])) {
 			$model->setAttributes($_POST['Comentario']);
-
+			$model->id_usuario = Yii::app()->user->id;
+			$model->data = $model->getDate();
+			
 			if ($model->save()) {
 				$this->redirect(array('view', 'id' => $model->id_comentario));
 			}
