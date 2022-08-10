@@ -36,9 +36,7 @@
 				'itemCssClass'=>'nav-item mx-2',
 				'htmlOptions'=>array('class'=>'navbar-nav'),
 				'items'=>array(
-					array('label'=>'Usuarios', 'url'=>array('/usuario/index'),'linkOptions'=>array('itemCssClass'=>'nav-link')),
-					array('label'=>'Post', 'url'=>array('/post/index'/*, 'view'=>'about'*/),'linkOptions'=>array('itemCssClass'=>'nav-link')),
-					array('label'=>'Comentarios', 'url'=>array('/comentario/index'),'linkOptions'=>array('itemCssClass'=>'nav-link')),
+					array('label'=>'Posts', 'url'=>array('/post/index'/*, 'view'=>'about'*/),'linkOptions'=>array('itemCssClass'=>'nav-link')),
 					array('label'=>'Login/Cadastro', 'url'=>array('/site/login'),'linkOptions'=>array('itemCssClass'=>'nav-link'), 'visible'=>Yii::app()->user->isGuest),
 					array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'),'linkOptions'=>array('itemCssClass'=>'nav-link'), 'visible'=>!Yii::app()->user->isGuest)
 				),
